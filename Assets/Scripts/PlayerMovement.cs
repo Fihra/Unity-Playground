@@ -12,13 +12,13 @@ public class PlayerMovement : MonoBehaviour
         //Add a forward force
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
 
-        if(Input.GetKey("d"))
+        if(Input.GetKey("d") || Input.GetKey("right"))
         {
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-        if(Input.GetKey("a"))
+        if(Input.GetKey("a") || Input.GetKey("left"))
         {
-            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
