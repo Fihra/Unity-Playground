@@ -1853,6 +1853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 1
+  completeLevelUI: {fileID: 2093865421}
 --- !u!4 &1279405493
 Transform:
   m_ObjectHideFlags: 0
