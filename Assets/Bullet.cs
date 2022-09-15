@@ -16,7 +16,7 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.AddForce(Vector3.forward * speed * Time.deltaTime);
+        rb.AddForce(Vector3.right * speed * Time.deltaTime);
 
         if(transform.position.x > 10f)
         {
